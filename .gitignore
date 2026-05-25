@@ -39,3 +39,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local artifacts
+.idea/
+.playwright-mcp/
+.sisyphus/
+*.log
+*.err
+*.out
+*.png
+*.tmp
+.tmp-*.log
+.tmp-upload-cookie.txt
