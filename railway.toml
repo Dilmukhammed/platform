@@ -1,13 +1,9 @@
 # Railway deployment config
-# Docs: https://docs.railway.com/reference/config-as-code
+# Bun + Next.js — auto-detected via packageManager field in package.json
 
 [build]
 builder = "nixpacks"
-buildCommand = "bun install --frozen-lockfile && bun run build"
 
 [deploy]
 startCommand = "bun run start"
 healthcheckPath = "/api/v1/health"
-
-# Railway auto-detects Next.js, but we pin Bun as the runtime
-# since Nixpacks supports Bun out of the box

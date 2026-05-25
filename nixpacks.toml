@@ -1,0 +1,12 @@
+# Nixpacks config — forces Bun into the Nix env so Railway build doesn't fail
+[phases.setup]
+nixPkgs = ["bun"]
+
+[phases.install]
+cmds = ["bun install --frozen-lockfile"]
+
+[phases.build]
+cmds = ["bun run build"]
+
+[start]
+cmd = "bun run start"
