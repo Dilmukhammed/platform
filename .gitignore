@@ -30,6 +30,10 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
+# lock files (Bun only — no npm)
+package-lock.json
+yarn.lock
+
 # turbo
 .turbo
 
