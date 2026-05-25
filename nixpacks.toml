@@ -1,9 +1,10 @@
-# Nixpacks config — forces Bun into the Nix env so Railway build doesn't fail
+# Nixpacks config for Bun + Next.js on Railway
+# bcrypt needs node-gyp → python3 + nodejs provide the native build toolchain
 [phases.setup]
-nixPkgs = ["bun"]
+nixPkgs = ["bun", "python3", "nodejs"]
 
 [phases.install]
-cmds = ["bun install --frozen-lockfile"]
+cmds = ["npm install -g node-gyp", "bun install --frozen-lockfile"]
 
 [phases.build]
 cmds = ["bun run build"]
