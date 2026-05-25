@@ -88,10 +88,17 @@ function LibraryNavCard({
 export default async function TeacherLibraryPage() {
   const session = await requireAreaAccess("teacher");
   
-  const [selectedOrganization, schoolMaterials] = await Promise.all([
-    apiGet<SelectedOrganization | null>("/api/v1/teacher/organizations/selected"),
-    apiGet<Material[]>("/api/v1/teacher/materials/library"),
-  ]);
+  let selectedOrganization: SelectedOrganization | null = null;
+  let schoolMaterials: Material[] = [];
+
+  try {
+    [selectedOrganization, schoolMaterials] = await Promise.all([
+      apiGet<SelectedOrganization | null>("/api/v1/teacher/organizations/selected"),
+      apiGet<Material[]>("/api/v1/teacher/materials/library"),
+    ]);
+  } catch {
+    // New teacher without organization — show empty state gracefully
+  }
 
   const hasOrganization = !!selectedOrganization;
 
@@ -113,7 +120,7 @@ export default async function TeacherLibraryPage() {
           {hasOrganization ? (
             <Badge variant="primary" size="md">
               <School className="w-3 h-3 mr-1" />
-              {selectedOrganization.organizationName}
+              {selectedOrganization!.organizationName}
             </Badge>
           ) : (
             <div className="rounded-lg border border-warning-subtle bg-warning-subtle/50 px-4 py-3 text-sm text-foreground-secondary">
@@ -129,7 +136,7 @@ export default async function TeacherLibraryPage() {
           {/* School Materials Card */}
           <LibraryNavCard
             title={t.teacher.library.schoolMaterials.title}
-            description={t.teacher.library.schoolMaterials.description(selectedOrganization.organizationName)}
+            description={t.teacher.library.schoolMaterials.description(selectedOrganization!.organizationName)}
             href="/teacher/library/school/materials"
             icon={School}
             count={schoolMaterials.length}
