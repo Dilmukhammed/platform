@@ -11,11 +11,8 @@ export const SESSION_WARNING_MINUTES = 5;
 
 const AUTH_COOKIE_SECRET = process.env.AUTH_COOKIE_SECRET;
 
-if (process.env.NODE_ENV === "production" && !AUTH_COOKIE_SECRET) {
-  throw new Error("AUTH_COOKIE_SECRET environment variable is required in production");
-}
-
-// For development only, use a fallback
+// Use dev fallback only in development; in production, validate lazily
+// to avoid crashing Next.js build (env vars may not be available at build time)
 const SECRET = AUTH_COOKIE_SECRET || (process.env.NODE_ENV === "development" ? "platform-architecture-dev-auth-secret" : undefined);
 
 function getAuthCookieOptions(maxAge: number) {
@@ -42,7 +39,10 @@ function decodeBase64Url(value: string) {
 }
 
 function signPayload(payload: string) {
-  return createHmac("sha256", SECRET!).update(payload).digest("base64url");
+  if (!SECRET) {
+    throw new Error("AUTH_COOKIE_SECRET environment variable is required in production");
+  }
+  return createHmac("sha256", SECRET).update(payload).digest("base64url");
 }
 
 function serializeSession(session: AuthenticatedSession) {
