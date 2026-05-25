@@ -1,0 +1,97 @@
+/**
+ * Semantic Color Tokens
+ * 
+ * Design System: Modern soft SaaS with blue/indigo accent
+ * Theme Strategy: Light + Dark dual theme
+ * 
+ * Naming Convention: --color-{category}-{variant}
+ * 
+ * Categories:
+ * - primary: Main accent color (blue/indigo)
+ * - surface: Background layers (app, cards, elevated)
+ * - text: Typography colors (primary, secondary)
+ * - border: Separator and outline colors
+ * - status: Semantic feedback colors (success, warning, error, info)
+ */
+
+/* ============================================
+   LIGHT THEME (Default)
+   ============================================ */
+:root {
+  color-scheme: light dark;
+
+  /* Primary Accent - Blue/Indigo */
+  --color-primary: #4f46e5;
+  --color-primary-hover: #4338ca;
+  --color-primary-active: #3730a3;
+  --color-primary-subtle: #e0e7ff;
+
+  /* Surface Layers - Soft light gray to white */
+  --color-surface: #f8fafc;
+  --color-surface-raised: #ffffff;
+  --color-surface-muted: #f1f5f9;
+  --color-surface-elevated: #ffffff;
+
+  /* Text Colors - High contrast hierarchy */
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #64748b;
+  --color-text-muted: #64748b;
+  --color-text-inverse: #f8fafc;
+
+  /* Border Colors - Subtle separators */
+  --color-border-default: #e2e8f0;
+  --color-border-subtle: #f1f5f9;
+  --color-border-focus: #4f46e5;
+  --color-border-hover: #cbd5e1;
+
+  /* Status Colors - Semantic feedback */
+  --color-success: #22c55e;
+  --color-success-subtle: #dcfce7;
+  --color-warning: #f59e0b;
+  --color-warning-subtle: #fef3c7;
+  --color-error: #ef4444;
+  --color-error-subtle: #fee2e2;
+  --color-info: #3b82f6;
+  --color-info-subtle: #dbeafe;
+}
+
+/* ============================================
+   DARK THEME (.dark class on html/body)
+   ============================================ */
+.dark {
+  color-scheme: dark;
+
+  /* Primary Accent - Lighter indigo for dark bg */
+  --color-primary: #818cf8;
+  --color-primary-hover: #6366f1;
+  --color-primary-active: #4f46e5;
+  --color-primary-subtle: #312e81;
+
+  /* Surface Layers - Deep graphite hierarchy */
+  --color-surface: #0f172a;
+  --color-surface-raised: #1e293b;
+  --color-surface-muted: #334155;
+  --color-surface-elevated: #1e293b;
+
+  /* Text Colors - High contrast on dark */
+  --color-text-primary: #f1f5f9;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #64748b;
+  --color-text-inverse: #ffffff;
+
+  /* Border Colors - Light-on-dark separators */
+  --color-border-default: #334155;
+  --color-border-subtle: #1e293b;
+  --color-border-focus: #818cf8;
+  --color-border-hover: #475569;
+
+  /* Status Colors - Adjusted for dark bg contrast */
+  --color-success: #4ade80;
+  --color-success-subtle: #14532d;
+  --color-warning: #fbbf24;
+  --color-warning-subtle: #78350f;
+  --color-error: #fca5a5;
+  --color-error-subtle: #7f1d1d;
+  --color-info: #93c5fd;
+  --color-info-subtle: #1e3a8a;
+}

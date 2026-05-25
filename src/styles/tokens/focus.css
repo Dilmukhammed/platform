@@ -1,0 +1,60 @@
+/* ==========================================================================
+   Focus Tokens
+   ========================================================================== */
+
+:root {
+  /* Focus Ring Dimensions
+     ---------------------------------------------------------------------- */
+  /* Width of the focus ring outline */
+  --focus-ring-width: 2px;
+  
+  /* Offset between element and focus ring */
+  --focus-ring-offset: 2px;
+  
+  /* Style of the focus ring (solid, dashed, etc.) */
+  --focus-ring-style: solid;
+
+  /* Focus Ring Colors
+     ---------------------------------------------------------------------- */
+  /* Primary focus ring color - references semantic border focus token */
+  --focus-ring-color: var(--color-border-focus);
+  
+  /* Error state focus ring color */
+  --focus-ring-color-error: var(--color-error);
+
+  /* Focus Transitions
+     ---------------------------------------------------------------------- */
+  /* Duration for focus ring appearance/disappearance */
+  --focus-transition-duration: var(--duration-fast);
+  
+  /* Easing for focus transitions */
+  --focus-transition-easing: var(--easing-default);
+}
+
+/* ==========================================================================
+   Focus Utility Classes
+   ========================================================================== */
+
+/* Standard focus ring for interactive elements */
+.focus-ring {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus;
+  transition: box-shadow var(--focus-transition-duration) var(--focus-transition-easing);
+}
+
+/* Focus ring with offset (for buttons, etc.) */
+.focus-ring-offset {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus focus-visible:ring-offset-2 focus-visible:ring-offset-surface-raised;
+  transition: box-shadow var(--focus-transition-duration) var(--focus-transition-easing);
+}
+
+/* Focus ring for error states */
+.focus-ring-error {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-error;
+  transition: box-shadow var(--focus-transition-duration) var(--focus-transition-easing);
+}
+
+/* Subtle focus ring for table rows, cards */
+.focus-ring-subtle {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus focus-visible:ring-offset-1 focus-visible:ring-offset-surface;
+  transition: box-shadow var(--focus-transition-duration) var(--focus-transition-easing);
+}

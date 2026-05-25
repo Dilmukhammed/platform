@@ -1,0 +1,36 @@
+/**
+ * Spacing Tokens
+ * 4/8-based scale for consistent spatial rhythm
+ */
+
+:root {
+  /* Base spacing scale */
+  --spacing-micro: 4px;
+  --spacing-compact: 8px;
+  --spacing-standard: 12px;
+  --spacing-default: 16px;
+  --spacing-comfortable: 24px;
+  --spacing-spacious: 32px;
+  --spacing-page: 40px;
+  --spacing-page-lg: 48px;
+
+  /* Semantic aliases for common use cases */
+  --gap-xs: var(--spacing-micro);
+  --gap-sm: var(--spacing-compact);
+  --gap-md: var(--spacing-standard);
+  --gap-lg: var(--spacing-default);
+  --gap-xl: var(--spacing-comfortable);
+  --gap-2xl: var(--spacing-spacious);
+  --gap-3xl: var(--spacing-page);
+  --gap-4xl: var(--spacing-page-lg);
+
+  /* Section spacing */
+  --section-gap-sm: var(--spacing-comfortable);
+  --section-gap-md: var(--spacing-spacious);
+  --section-gap-lg: var(--spacing-page);
+
+  /* Content spacing */
+  --content-gap-sm: var(--spacing-compact);
+  --content-gap-md: var(--spacing-standard);
+  --content-gap-lg: var(--spacing-default);
+}

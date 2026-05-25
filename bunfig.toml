@@ -1,0 +1,3 @@
+[test]
+# Exclude Playwright E2E tests from Bun test runs
+exclude = ["e2e", "**/e2e/**"]

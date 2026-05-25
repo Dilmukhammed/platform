@@ -1,0 +1,6 @@
+Test Material Content
+
+This is a test file created for Playwright automation testing.
+It verifies that the file upload functionality works correctly.
+
+Created: 2026-04-17

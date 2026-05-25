@@ -1,0 +1,34 @@
+/**
+ * Sizing Tokens
+ * Control sizing for buttons, inputs, and interactive elements
+ */
+
+:root {
+  /* Small controls (compact UI, dense layouts) */
+  --control-sm-height: 32px;
+  --control-sm-padding-x: 8px;
+  --control-sm-font: 13px;
+  --control-sm-icon: 14px;
+
+  /* Medium controls (default, most common) */
+  --control-md-height: 40px;
+  --control-md-padding-x: 12px;
+  --control-md-font: 14px;
+  --control-md-icon: 16px;
+
+  /* Large controls (emphasis, touch-friendly) */
+  --control-lg-height: 48px;
+  --control-lg-padding-x: 16px;
+  --control-lg-font: 16px;
+  --control-lg-icon: 20px;
+
+  /* Control spacing */
+  --control-gap-sm: 6px;
+  --control-gap-md: 8px;
+  --control-gap-lg: 12px;
+
+  /* Icon sizing within controls */
+  --control-icon-sm: 14px;
+  --control-icon-md: 16px;
+  --control-icon-lg: 20px;
+}

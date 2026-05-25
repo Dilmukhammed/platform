@@ -1,0 +1,1 @@
+UPDATE auth.users SET raw_app_meta_data = '{"provider":"email","providers":["email"]}'::jsonb, raw_user_meta_data = '{"display_name":"Platform Admin","email_verified":true}'::jsonb WHERE email = 'admin@platform.local';

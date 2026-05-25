@@ -1,0 +1,47 @@
+/* ==========================================================================
+   Motion Tokens
+   ========================================================================== */
+
+:root {
+  /* Duration Tokens
+     ---------------------------------------------------------------------- */
+  /* Fast: Micro interactions (button hovers, toggles) */
+  --duration-fast: 120ms;
+  
+  /* Normal: Default transitions (most UI elements) */
+  --duration-normal: 150ms;
+  
+  /* Slow: Panel open/close, larger movements */
+  --duration-slow: 180ms;
+
+  /* Easing Tokens
+     ---------------------------------------------------------------------- */
+  /* Standard ease - most transitions */
+  --easing-default: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Ease-in - elements exiting */
+  --easing-in: cubic-bezier(0.4, 0, 1, 1);
+  
+  /* Ease-out - elements entering */
+  --easing-out: cubic-bezier(0, 0, 0.2, 1);
+  
+  /* Spring-like - playful, bouncy interactions */
+  --easing-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Reduced Motion Support
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    /* Override ALL duration tokens to 0ms for instant transitions */
+    --duration-fast: 0ms;
+    --duration-normal: 0ms;
+    --duration-slow: 0ms;
+    
+    /* Override easing to linear for reduced motion */
+    --easing-default: linear;
+    --easing-in: linear;
+    --easing-out: linear;
+    --easing-spring: linear;
+  }
+}

@@ -1,0 +1,16 @@
+# Template for Variant A: Claude Code -> LiteLLM -> custom provider
+# Fill values via scripts/start-litellm.ps1
+
+model_list:
+  - model_name: __CLAUDE_PICKER_MODEL_ID__
+    litellm_params:
+      # Example values:
+      # openai/gpt-4o-mini
+      # openrouter/openai/gpt-5
+      # anthropic/claude-sonnet-4-6
+      model: __LITELLM_PROVIDER_AND_MODEL__
+      api_base: os.environ/UPSTREAM_API_BASE
+      api_key: os.environ/UPSTREAM_API_KEY
+
+general_settings:
+  master_key: os.environ/LITELLM_MASTER_KEY

@@ -1,0 +1,27 @@
+/**
+ * Radius Tokens
+ * Border radius for controls, containers, and overlays
+ */
+
+:root {
+  /* Control radius (buttons, inputs, badges) */
+  --radius-control-sm: 8px;
+  --radius-control-md: 10px;
+  --radius-control-lg: 12px;
+
+  /* Container radius (cards, panels, modals) */
+  --radius-container-sm: 12px;
+  --radius-container-md: 14px;
+  --radius-container-lg: 16px;
+
+  /* Full radius (pills, circles) */
+  --radius-full: 9999px;
+
+  /* Semantic aliases */
+  --radius-button: var(--radius-control-md);
+  --radius-input: var(--radius-control-md);
+  --radius-card: var(--radius-container-md);
+  --radius-modal: var(--radius-container-lg);
+  --radius-badge: var(--radius-control-sm);
+  --radius-avatar: var(--radius-full);
+}

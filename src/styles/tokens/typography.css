@@ -1,0 +1,57 @@
+/* ==========================================================================
+   Typography Tokens
+   ========================================================================== */
+
+:root {
+  /* Font Family
+     ---------------------------------------------------------------------- */
+  --font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  /* Display - Large impactful text (hero, page titles)
+     ---------------------------------------------------------------------- */
+  --font-size-display: 48px;
+  --line-height-display: 1.1;
+  --font-weight-display: 700;
+
+  /* H1 - Page/section titles
+     ---------------------------------------------------------------------- */
+  --font-size-h1: 36px;
+  --line-height-h1: 1.2;
+  --font-weight-h1: 700;
+
+  /* H2 - Section headings
+     ---------------------------------------------------------------------- */
+  --font-size-h2: 30px;
+  --line-height-h2: 1.25;
+  --font-weight-h2: 600;
+
+  /* H3 - Subsection headings
+     ---------------------------------------------------------------------- */
+  --font-size-h3: 24px;
+  --line-height-h3: 1.3;
+  --font-weight-h3: 600;
+
+  /* Body Large - Emphasized body text
+     ---------------------------------------------------------------------- */
+  --font-size-body-lg: 18px;
+  --line-height-body-lg: 1.5;
+  --font-weight-body-lg: 400;
+
+  /* Body - Default text
+     ---------------------------------------------------------------------- */
+  --font-size-body: 16px;
+  --line-height-body: 1.5;
+  --font-weight-body: 400;
+
+  /* Body Small - Secondary text, captions
+     ---------------------------------------------------------------------- */
+  --font-size-body-sm: 14px;
+  --line-height-body-sm: 1.5;
+  --font-weight-body-sm: 400;
+
+  /* Caption - Fine print, metadata
+     ---------------------------------------------------------------------- */
+  --font-size-caption: 12px;
+  --line-height-caption: 1.4;
+  --font-weight-caption: 400;
+}

@@ -1,0 +1,63 @@
+/**
+ * Role Accent Tokens
+ * 
+ * Design System: Subtle role-specific accent colors for contextual cues
+ * Policy: Role accents ONLY on allowed surfaces (nav active, badges, context markers)
+ * 
+ * FORBIDDEN:
+ * - Main body text color shifts per role
+ * - Arbitrary per-page background recoloring
+ * - Inconsistent CTA styling per role
+ * 
+ * ALLOWED:
+ * - Navigation active state indicators
+ * - Role badges/chips
+ * - Small context markers
+ * 
+ * Naming Convention: --role-accent-{role}-{variant}
+ * 
+ * Roles:
+ * - student: Blue (#3b82f6) - Learning, calm, trustworthy
+ * - teacher: Violet (#8b5cf6) - Wisdom, creativity, guidance
+ * - admin: Amber (#f59e0b) - Attention, action, authority
+ */
+
+/* ============================================
+   LIGHT THEME (Default)
+   ============================================ */
+:root {
+  /* Student Role - Blue accent */
+  --role-accent-student: #3b82f6;
+  --role-accent-student-subtle: #dbeafe;
+  --role-accent-student-border: #bfdbfe;
+
+  /* Teacher Role - Violet accent */
+  --role-accent-teacher: #8b5cf6;
+  --role-accent-teacher-subtle: #ede9fe;
+  --role-accent-teacher-border: #ddd6fe;
+
+  /* Admin Role - Amber accent */
+  --role-accent-admin: #f59e0b;
+  --role-accent-admin-subtle: #fef3c7;
+  --role-accent-admin-border: #fde68a;
+}
+
+/* ============================================
+   DARK THEME (.dark class on html/body)
+   ============================================ */
+.dark {
+  /* Student Role - Lighter blue for dark bg */
+  --role-accent-student: #60a5fa;
+  --role-accent-student-subtle: #1e3a8a;
+  --role-accent-student-border: #1e40af;
+
+  /* Teacher Role - Lighter violet for dark bg */
+  --role-accent-teacher: #a78bfa;
+  --role-accent-teacher-subtle: #5b21b6;
+  --role-accent-teacher-border: #6d28d9;
+
+  /* Admin Role - Lighter amber for dark bg */
+  --role-accent-admin: #fbbf24;
+  --role-accent-admin-subtle: #92400e;
+  --role-accent-admin-border: #b45309;
+}

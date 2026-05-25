@@ -1,0 +1,51 @@
+@import "../styles/tokens/colors.css";
+@import "../styles/tokens/spacing.css";
+@import "../styles/tokens/sizing.css";
+@import "../styles/tokens/radius.css";
+@import "../styles/tokens/typography.css";
+@import "../styles/tokens/motion.css";
+@import "../styles/tokens/role-accent.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Focus utilities must be imported after @tailwind utilities */
+@import "../styles/tokens/focus.css";
+
+@layer base {
+  /* Base body styles using semantic tokens */
+  body {
+    @apply bg-surface text-foreground antialiased;
+    font-family: var(--font-family);
+  }
+
+  /* Link styles using semantic tokens */
+  a {
+    @apply text-primary underline-offset-4 hover:underline;
+  }
+
+  /* NavItem active state - must override global a[] styles */
+  [data-active="true"] {
+    background-color: var(--color-primary-subtle) !important;
+    color: var(--color-text-primary) !important;
+    font-weight: 600 !important;
+  }
+
+  /* Focus visible styles for accessibility */
+  :focus-visible {
+    @apply outline-none ring-2 ring-border-focus ring-offset-2 ring-offset-surface;
+  }
+
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}

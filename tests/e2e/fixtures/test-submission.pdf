@@ -1,0 +1,140 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 4500 >>
+stream
+BT
+/F1 12 Tf
+100 700 Td
+(Test Submission PDF) Tj
+0 -20 Td
+(Test ID: SUB-2026-001) Tj
+0 -20 Td
+(Student: ST-100001) Tj
+0 -20 Td
+(Date: 2026-05-12) Tj
+0 -40 Td
+(This is a test fixture file for QA verification.) Tj
+0 -20 Td
+(It contains sample submission data for testing) Tj
+0 -20 Td
+(the file upload functionality in the platform.) Tj
+0 -40 Td
+(--- Test Data Section ---) Tj
+0 -20 Td
+(Item 1: Sample question response) Tj
+0 -20 Td
+(Item 2: Additional notes and comments) Tj
+0 -20 Td
+(Item 3: Attachment metadata) Tj
+0 -40 Td
+(Lorem ipsum dolor sit amet, consectetur adipiscing elit.) Tj
+0 -20 Td
+(Sed do eiusmod tempor incididunt ut labore et dolore) Tj
+0 -20 Td
+(magna aliqua. Ut enim ad minim veniam, quis nostrud) Tj
+0 -20 Td
+(exercitation ullamco laboris nisi ut aliquip ex ea) Tj
+0 -20 Td
+(commodo consequat. Duis aute irure dolor in) Tj
+0 -20 Td
+(reprehenderit in voluptate velit esse cillum dolore) Tj
+0 -20 Td
+(eu fugiat nulla pariatur.) Tj
+0 -40 Td
+(Excepteur sint occaecat cupidatat non proident, sunt in) Tj
+0 -20 Td
+(culpa qui officia deserunt mollit anim id est laborum.) Tj
+0 -40 Td
+(Section 2: Additional Information) Tj
+0 -20 Td
+(More test data to reach approximately 5KB file size) Tj
+0 -20 Td
+(Continuing with placeholder content for the PDF) Tj
+0 -20 Td
+(This helps ensure the file is large enough for testing) Tj
+0 -20 Td
+(various file handling scenarios in the application.) Tj
+0 -40 Td
+(Repeat section for size:) Tj
+0 -20 Td
+(Data block 1: The quick brown fox jumps over the lazy dog.) Tj
+0 -20 Td
+(Data block 2: All work and no play makes Jack a dull boy.) Tj
+0 -20 Td
+(Data block 3: Now is the time for all good men to come to.) Tj
+0 -20 Td
+(Data block 4: The rain in Spain stays mainly in the plain.) Tj
+0 -20 Td
+(Data block 5: She sells seashells by the seashore.) Tj
+0 -20 Td
+(Data block 6: Peter Piper picked a peck of pickled peppers.) Tj
+0 -20 Td
+(Data block 7: How much wood would a woodchuck chuck.) Tj
+0 -20 Td
+(Data block 8: Bobby Bo has a big blue balloon.) Tj
+0 -20 Td
+(Data block 9: Red lorry yellow lorry red lorry yellow lorry.) Tj
+0 -20 Td
+(Data block 10: Unique New York you know you need unique New York.) Tj
+0 -40 Td
+(Additional padding content to reach target file size.) Tj
+0 -20 Td
+(Line 1: ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789) Tj
+0 -20 Td
+(Line 2: abcdefghijklmnopqrstuvwxyz) Tj
+0 -20 Td
+(Line 3: !@#$%^&*()_+-=[]{}|;':",./<>?) Tj
+0 -20 Td
+(Line 4: Testing file upload size limits and constraints.) Tj
+0 -20 Td
+(Line 5: Verifying PDF parsing and processing capabilities.) Tj
+0 -20 Td
+(Line 6: Checking MIME type detection and validation.) Tj
+0 -20 Td
+(Line 7: Examining content-disposition header handling.) Tj
+0 -20 Td
+(Line 8: Validating file name sanitization and storage.) Tj
+0 -20 Td
+(Line 9: Testing chunked upload functionality.) Tj
+0 -20 Td
+(Line 10: Verifying progress tracking and reporting.) Tj
+0 -40 Td
+(Final section: Metadata and validation info) Tj
+0 -20 Td
+(File format: PDF 1.4) Tj
+0 -20 Td
+(Page count: 1) Tj
+0 -20 Td
+(Created: 2026-05-12) Tj
+0 -20 Td
+(Purpose: E2E test fixture) Tj
+0 -20 Td
+(Size target: ~5KB) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000266 00000 n 
+0000000361 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+4900
+%%EOF

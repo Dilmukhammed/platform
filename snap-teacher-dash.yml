@@ -1,0 +1,117 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]: Oʻqituvchi
+        - generic [ref=e6]: Oʻqituvchi
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - paragraph [ref=e9]: Demo Teacher
+          - paragraph [ref=e10]: teacher@platform.local
+        - button "Chiqish" [ref=e12] [cursor=pointer]:
+          - generic [ref=e13]: Chiqish
+      - navigation [ref=e14]:
+        - link "Umumiy koʻrinish" [ref=e15] [cursor=pointer]:
+          - /url: /teacher
+        - link "Tashkilotlar" [ref=e16] [cursor=pointer]:
+          - /url: /teacher/organizations
+        - link "Sinflar" [ref=e17] [cursor=pointer]:
+          - /url: /teacher/classes
+        - link "Oʻquvchilar" [ref=e18] [cursor=pointer]:
+          - /url: /teacher/students
+        - link "Materiallar" [ref=e19] [cursor=pointer]:
+          - /url: /teacher/materials
+        - link "Testlar" [ref=e20] [cursor=pointer]:
+          - /url: /teacher/tests
+        - link "Topshiriqlar" [ref=e21] [cursor=pointer]:
+          - /url: /teacher/assignments
+        - link "Nashrlar" [ref=e22] [cursor=pointer]:
+          - /url: /teacher/publications
+        - link "Tekshiruvlar" [ref=e23] [cursor=pointer]:
+          - /url: /teacher/reviews
+        - link "Baholar jurnali" [ref=e24] [cursor=pointer]:
+          - /url: /teacher/gradebook
+        - link "Kutubxona" [ref=e25] [cursor=pointer]:
+          - /url: /teacher/library
+        - link "Bildirishnomalar" [ref=e26] [cursor=pointer]:
+          - /url: /teacher/notifications
+        - link "Sozlamalar" [ref=e27] [cursor=pointer]:
+          - /url: /teacher/settings
+    - main [ref=e28]:
+      - generic [ref=e29]:
+        - generic [ref=e30]:
+          - heading "Qaytganingiz bilan, Demo Teacher" [level=1] [ref=e31]
+          - paragraph [ref=e32]: Bugun eʼtibor talab qiladigan ishlar shu yerda.
+        - generic [ref=e33]:
+          - img [ref=e35]
+          - generic [ref=e38]:
+            - paragraph [ref=e39]: 1 ta oʻqilmagan bildirishnoma
+            - paragraph [ref=e40]: "Soʻnggisi: Yangi bildirishnoma"
+          - link "Barchasini koʻrish" [ref=e41] [cursor=pointer]:
+            - /url: /teacher/notifications
+        - generic [ref=e42]:
+          - generic [ref=e44]:
+            - generic [ref=e46]:
+              - generic [ref=e47]:
+                - heading "Kutilayotgan tekshiruvlar" [level=3] [ref=e48]
+                - paragraph [ref=e49]: Oʻquvchi topshiriqlari sizning tekshirishingizni kutmoqda
+              - status "warning badge" [ref=e50]: 1 ta kutilmoqda
+            - generic [ref=e53]:
+              - generic [ref=e54]:
+                - link "Orthographic Projection Basics" [ref=e55] [cursor=pointer]:
+                  - /url: /teacher/reviews/95000000-0000-4000-8000-000000000003
+                - paragraph [ref=e56]: Mira Volkova (ST-100002) • Engineering Graphics 8A
+                - status "default badge" [ref=e58]: Amaliy
+              - generic [ref=e59]:
+                - status "Tekshirish kerak status" [ref=e60]:
+                  - generic [ref=e62]: Tekshirish kerak
+                - generic [ref=e63]: 16-yan, 2026 yuborildi
+          - generic [ref=e64]:
+            - generic [ref=e65]:
+              - generic [ref=e67]:
+                - generic [ref=e68]:
+                  - heading "Mening sinflarim" [level=3] [ref=e69]
+                  - paragraph [ref=e70]: Siz dars beradigan sinflar
+                - status "primary badge" [ref=e71]: "2"
+              - generic [ref=e73]:
+                - link "Engineering Graphics 8A Primary seeded class for fixture QA. default badge Faol status" [ref=e74] [cursor=pointer]:
+                  - /url: /teacher/classes/80000000-0000-4000-8000-000000000001
+                  - generic [ref=e75]:
+                    - paragraph [ref=e76]: Engineering Graphics 8A
+                    - paragraph [ref=e77]: Primary seeded class for fixture QA.
+                  - generic [ref=e78]:
+                    - status "default badge" [ref=e79]: Egasi
+                    - status "Faol status" [ref=e80]:
+                      - generic [ref=e81]: Faol
+                - link "Engineering Graphics 8B Secondary seeded class for multi-class student dashboard QA. default badge Faol status" [ref=e82] [cursor=pointer]:
+                  - /url: /teacher/classes/80000000-0000-4000-8000-000000000002
+                  - generic [ref=e83]:
+                    - paragraph [ref=e84]: Engineering Graphics 8B
+                    - paragraph [ref=e85]: Secondary seeded class for multi-class student dashboard QA.
+                  - generic [ref=e86]:
+                    - status "default badge" [ref=e87]: Egasi
+                    - status "Faol status" [ref=e88]:
+                      - generic [ref=e89]: Faol
+            - generic [ref=e90]:
+              - generic [ref=e92]:
+                - generic [ref=e93]:
+                  - heading "Faol topshiriqlar" [level=3] [ref=e94]
+                  - paragraph [ref=e95]: Hozir eʼlon qilingan topshiriqlar
+                - status "primary badge" [ref=e96]: 1 ta faol
+              - table [ref=e99]:
+                - rowgroup [ref=e100]:
+                  - row "Topshiriq Sinflar" [ref=e101]:
+                    - columnheader "Topshiriq" [ref=e102]
+                    - columnheader "Sinflar" [ref=e103]
+                - rowgroup [ref=e104]:
+                  - row "Orthographic Projection Basics 15-yan, 2026 eʼlon qilingan default badge" [ref=e105]:
+                    - cell "Orthographic Projection Basics 15-yan, 2026 eʼlon qilingan" [ref=e106]:
+                      - link "Orthographic Projection Basics 15-yan, 2026 eʼlon qilingan" [ref=e107] [cursor=pointer]:
+                        - /url: /teacher/assignments/90000000-0000-4000-8000-000000000001
+                        - paragraph [ref=e108]: Orthographic Projection Basics
+                        - paragraph [ref=e109]: 15-yan, 2026 eʼlon qilingan
+                    - cell "default badge" [ref=e110]:
+                      - status "default badge" [ref=e111]: 2 ta sinf
+  - alert [ref=e112]
+  - button "Open Next.js Dev Tools" [ref=e118] [cursor=pointer]:
+    - img [ref=e119]

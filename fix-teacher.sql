@@ -1,0 +1,1 @@
+UPDATE auth.users SET instance_id = '00000000-0000-0000-0000-000000000000'::uuid, raw_app_meta_data = '{"provider":"email","providers":["email"]}'::jsonb, raw_user_meta_data = '{"display_name":"Demo Teacher","email_verified":true}'::jsonb WHERE email = 'teacher@platform.local';
