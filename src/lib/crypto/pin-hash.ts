@@ -11,7 +11,7 @@
  */
 
 import { createHash } from "node:crypto";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 
 // bcrypt cost factor (10-12 is recommended for production)
 const BCRYPT_SALT_ROUNDS = 10;

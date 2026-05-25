@@ -1,7 +1,7 @@
 import "server-only";
 
 import { comparePin } from "@/lib/crypto/pin-hash";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import { createServerClient } from "@/lib/supabase/server-client";
 import { t } from "@/lib/translations";
 
